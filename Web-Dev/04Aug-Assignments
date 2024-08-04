@@ -1,0 +1,102 @@
+// Assignment 1
+// Create a variable for each of the following:
+// your favorite color, your height in centimeters,
+// and whether you like pizza. Use appropriate variable
+// declarations (let, const, or var). Try logging it using console.log
+
+let favoriteColor = "Red";
+const height = 180;
+let likePizza = true;
+
+console.log(`My favorite color is ${favoriteColor}`);
+console.log(`My height is ${height} cm`);
+console.log(`I like pizza. The answer is ${likePizza}`);
+
+------------------------------------------------------------------------------------------------------
+
+// Assignment 2
+// Write a function sum that finds the sum of two numbers.
+
+function sum(a, b) {
+    return a + b;
+}
+console.log(sum(1, 1)); // 2
+
+// Side quest: Try passing in a string instead of a number and see what happens?
+console.log(sum('1', '1')); // 11
+
+------------------------------------------------------------------------------------------------------
+
+// Assignment 3
+// Write a function called canVote that returns true or false if the age of a user is > 18
+
+function canVote(age) {
+    if (age > 18) {
+        return true;
+    }
+    return false;
+}
+console.log(canVote(19));
+
+------------------------------------------------------------------------------------------------------
+
+// Assignment 4
+// Write an if/else statement that checks if a number is even or odd.
+// If it's even, print "The number is even." Otherwise, print "The number is odd."
+
+let nums = 12;
+if (nums % 2 == 0) {
+    console.log("The number is even");
+} else {
+    console.log("The number is odd");
+}
+
+------------------------------------------------------------------------------------------------------
+
+// Assignment 5
+// Write a function called sum that finds the sum from 1 to a number
+
+function sumOfNumber(n) {
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum = sum + i;
+    }
+    return sum;
+}
+console.log(sumOfNumber(12));
+
+------------------------------------------------------------------------------------------------------
+
+// Assignment 6
+// Write a function that takes a user as an input and greets them with their name and age
+
+function greetUser(user, age) {
+    console.log(`Hi, Good Morning ${user} and age is ${age}`);
+}
+
+------------------------------------------------------------------------------------------------------
+
+// Assignment 7
+// Write a function that takes a new object as input which has name age and gender and
+// greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21)
+
+let sampleUser = {
+    name: 'harkirat',
+    age: 21,
+    gender: 'Male'
+};
+
+------------------------------------------------------------------------------------------------------
+
+// Assignment 8
+// Write a function that takes a new object as input which has name age and gender
+// and greets the user with their gender (Hi Mr/Mrs/Others harkirat, your age is 21)
+
+function greetingUser(sampleUser) {
+    console.log(`Hi Mr/Mrs/Other ${sampleUser.name}, your age is ${sampleUser.age}`);
+    if (sampleUser.age >= 18) {
+        console.log("Yes, you are legal to vote");
+    } else {
+        console.log('No, you are not legal to vote');
+    }
+}
